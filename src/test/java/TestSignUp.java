@@ -6,6 +6,11 @@ public class TestSignUp {
 	@Before
 	public void setUp(){
 		// Instantiate page objects here
+	    System.setProperty("webdriver.chrome.driver","");
+	    driver=new ChromeDriver(); 
+	    driver.get("");   
+	    driver.manage().window().maximize();
+	   
 		
 	}
 	
